@@ -1,0 +1,16 @@
+#timer_container{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 9999;
+    color:#dd3333;
+    bottom:0px;
+    left:0px;
+    width: 250px;
+    text-align: center;
+    height: 1.1em;
+    font-size: 3em;
+    font-family: sans-serif;
+}
+body {
+    height:100vh;
+}

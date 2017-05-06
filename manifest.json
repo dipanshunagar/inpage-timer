@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "In-page Timer",
+  "description": "Extension for showing countdown timer on current browser tab",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}

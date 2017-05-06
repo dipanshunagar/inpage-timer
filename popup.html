@@ -1,0 +1,36 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>In-Page Timer</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <label for="interval_mins">Minutes: </label><input type="number" id="interval_mins" value="0"/>
+    <label for="interval_secs">Seconds: </label><input type="number" id="interval_secs" value="0"/>
+    <button id="btn">Start</button><br>
+    <button id="pausebtn">Pause</button>
+    <button id="resumebtn">Resume</button>
+    <button id="resetbtn">Reset</button>
+    
+    <script src="popup.js"></script>
+  </body>
+</html>
+
