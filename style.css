@@ -1,8 +1,8 @@
 #timer_container{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     position: fixed;
     z-index: 9999;
-    color:#dd3333;
+    color:rgb(255,30,30);
     bottom:0px;
     left:0px;
     width: 250px;
